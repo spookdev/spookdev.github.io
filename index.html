@@ -8,20 +8,20 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <!-- Icons -->
+    <!-- Font Awesome Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
     <style>
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
             font-family: 'Poppins', sans-serif;
         }
 
         body {
             min-height: 100vh;
-            background: radial-gradient(circle at top, #1a1a1a, #000);
+            background: radial-gradient(circle at top, #1b1b1b, #000);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -31,8 +31,8 @@
         .container {
             width: 360px;
             max-width: 90%;
-            padding: 40px 20px;
             text-align: center;
+            padding: 40px 20px;
         }
 
         .profile-img {
@@ -40,7 +40,7 @@
             height: 120px;
             border-radius: 50%;
             object-fit: cover;
-            border: 2px solid #fff;
+            border: 2px solid rgba(255,255,255,0.6);
             margin-bottom: 20px;
         }
 
@@ -48,22 +48,22 @@
             font-size: 20px;
             font-weight: 600;
             letter-spacing: 1px;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
 
         .subtitle {
             font-size: 13px;
             font-weight: 300;
+            opacity: 0.85;
             line-height: 1.4;
-            opacity: 0.8;
             margin-bottom: 25px;
         }
 
         .section-title {
             font-size: 14px;
-            margin-bottom: 20px;
             font-weight: 400;
             opacity: 0.9;
+            margin-bottom: 20px;
         }
 
         .btn {
@@ -77,31 +77,32 @@
             text-decoration: none;
             font-weight: 500;
             letter-spacing: 1px;
-            box-shadow: inset 0 0 0 1px rgba(255,255,255,0.05),
-                        0 6px 15px rgba(0,0,0,0.6);
+            box-shadow: inset 0 0 0 1px rgba(255,255,255,0.06),
+                        0 8px 20px rgba(0,0,0,0.7);
             transition: all 0.25s ease;
         }
 
         .btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.8);
+            box-shadow: 0 12px 28px rgba(0,0,0,0.9);
         }
 
         .socials {
             margin-top: 30px;
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 16px;
+            flex-wrap: wrap;
         }
 
         .socials a {
-            width: 36px;
-            height: 36px;
+            width: 38px;
+            height: 38px;
             border-radius: 50%;
             border: 1px solid rgba(255,255,255,0.25);
             display: flex;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
             color: #fff;
             text-decoration: none;
             font-size: 16px;
@@ -125,27 +126,48 @@
 <body>
 
     <div class="container">
-        <!-- Replace src with your own image -->
-        <img src="profile.png" alt="Profile Photo" class="profile-img">
+        <!-- Profile Image -->
+        <img src="profile.jpg" alt="Profile Photo" class="profile-img">
 
         <h1>NADIR LOUAHADJ</h1>
 
         <p class="subtitle">
-            Graphic designer<br>
-            Video editor
+            Graphic Designer<br>
+            Video Editor
         </p>
 
-        <p class="section-title">- Check out my work -</p>
+        <p class="section-title">— Check out my work —</p>
 
+        <!-- Buttons -->
         <a href="#" class="btn">DESIGNS</a>
         <a href="#" class="btn">VIDEOS</a>
         <a href="#" class="btn">OTHER</a>
 
+        <!-- Social Links -->
         <div class="socials">
-            <a href="#"><i class="fab fa-whatsapp"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-telegram"></i></a>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/213XXXXXXXXX" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+
+            <a href="https://instagram.com/yourusername" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://t.me/yourusername" target="_blank">
+                <i class="fab fa-telegram"></i>
+            </a>
+
+            <a href="https://facebook.com/yourusername" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a href="https://discord.gg/YOURINVITECODE" target="_blank">
+                <i class="fab fa-discord"></i>
+            </a>
+
+            <a href="https://youtube.com/@yourchannel" target="_blank">
+                <i class="fab fa-youtube"></i>
+            </a>
         </div>
     </div>
 
